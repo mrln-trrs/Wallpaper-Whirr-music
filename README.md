@@ -1,3 +1,3 @@
-https://marlonte.github.io/FondoDePantallaReproductorMP3_Album/
+https://mrln-trrs.github.io/Wallpaper-Whirr-music/
 
 Mi primer "proyecto" web, aunque realmente solo quise hacerme un fondo de pantalla para esuchar musica mientras duermo o estudio, me gustaria hacerlo bien en un futuro
