@@ -1,75 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Reproductor</title>
-</head>
-<body>
-  <!-- Background Image -->
-  <div class="Background">
-    <img src="img/feels-like-you.png" alt="Blurred Background" class="Blurred-Background">
-  </div>
-
-  <div class="Container">
-    <!-- Sidebar -->
-    <div class="Sidebar" id="sidebar">
-      <h2>Song List</h2>
-      <ol id="songList">
-        <li onclick="selectSong(0)">Mellow</li>
-        <li onclick="selectSong(1)">Wavelength</li>
-        <li onclick="selectSong(2)">Younger Than You</li>
-        <li onclick="selectSong(3)">Rose Cold</li>
-        <li onclick="selectSong(4)">Before You Head Off</li>
-        <li onclick="selectSong(5)">How Time Stretches</li>
-        <li onclick="selectSong(6)">Rental</li>
-        <li onclick="selectSong(7)">Vividly</li>
-        <li onclick="selectSong(8)">Play The Slow Ones</li>
-        <li onclick="selectSong(9)">Under The Same Name</li>
-      </ol>
-    </div>
-
-    <!-- Toggle Button -->
-    <button id="toggleSidebar" onclick="toggleSidebar()">☰</button>
-
-    <!-- Album Cover -->
-    <div class="Album">
-      <img class="Img-Album" src="img/feels-like-you.png" alt="Album Art">
-      <h1>Feels Like You</h1>
-      
-      <!-- Song Title -->
-      <h2 id="nowPlaying">Mellow</h2>
-      
-      <!-- Controls -->
-      <div id="Controls">
-        <div id="progressBarContainer">
-          <div id="progressBar"></div>
-        </div>
-        <div>
-          <button id="btn__Anterior" onclick="Anterior();"><<</button>
-          <button id="btn__Atrasar" onclick="Atrasar();"><</button>
-          <button id="btn__PlayPause" onclick="PlayPause();">P</button>
-          <button id="btn__Adelantar" onclick="Adelantar();">></button>
-          <button id="btn__Posterior" onclick="Posterior();">>></button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Audio Element -->
-  <audio id="audio" preload="metadata" onended="Posterior();" src="musica/whirr/01Mellow.mp3"></audio>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js" integrity="sha512-YsR46MmyChktsyMMou+Bs74oCa/CDdwft7rJ5wlnmDzMj1mzqncsfJamEEf99Nk7IB0JpTMo5hS8rxB49FUktQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="main.js"></script>
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.classList.toggle("open"); // Toggle the "open" class
-    }
-
-    document.getElementById("toggleSidebar").addEventListener("click", toggleSidebar);
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reproductor de música y fondo para estudiar con el álbum Feels Like You de Whirr. Proyecto educativo sin fines de lucro." />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/png" href="/img/feels-like-you.png" />
+    <title>Whirr · Feels Like You</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
