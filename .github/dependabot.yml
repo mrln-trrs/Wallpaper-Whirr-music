@@ -7,6 +7,11 @@ updates:
     groups:
       dependencias:
         patterns: ['*']
+        update-types: [minor, patch]
+    ignore:
+      # TypeScript 7 (compilador nativo) aún no es compatible con typescript-eslint.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
   - package-ecosystem: github-actions
     directory: /
     schedule:
