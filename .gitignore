@@ -1,0 +1,19 @@
+# Dependencias y compilación
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+coverage/
+
+# Editores y sistema
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Entorno y registros
+.env
+.env.*
+npm-debug.log*
+*.log
